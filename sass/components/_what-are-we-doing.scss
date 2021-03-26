@@ -1,0 +1,41 @@
+.what-are-we-doing__images {
+    display: flex;
+    padding-top: 50px;
+}
+
+.what-are-we-doing {
+    text-align: center;
+}
+
+.what-are-we-doing__thumb {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    position: relative;
+    display: flex;
+    
+    &:last-child {
+    margin-right: 0px;
+    }
+}
+
+.what-are-we-doing__pic {
+    width: 100%;
+}
+
+.image-stick {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.image-stick__title{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.03em;
+}

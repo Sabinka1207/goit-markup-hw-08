@@ -1,0 +1,53 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+address {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: roboto, sans-serif;
+}
+
+button {
+    border: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.why-we,
+.what-are-we-doing,
+.our-team,
+.clients {
+    padding-top: 94px;
+}
+
+.what-are-we-doing,
+.our-team,
+.clients {
+    padding-bottom: 94px;
+}

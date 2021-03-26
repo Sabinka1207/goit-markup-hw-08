@@ -1,0 +1,33 @@
+.why-we__list {
+    display: flex;
+}
+
+.why-we__item {
+    width: calc(100% / 4 - 30);
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.why-we__title {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.why-we__icon {
+    width: 70px;
+    height: 70px;
+
+    /* padding: 25px 100px; */
+}
+
+.why-we__thumb {
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: var(--backgroud-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

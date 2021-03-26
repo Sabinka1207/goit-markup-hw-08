@@ -1,0 +1,123 @@
+/* HEADER */
+
+.header {
+    border-bottom: 1px solid var(--line-grey);
+}
+
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.header__logo {
+    color: var(--logo-black);
+}
+
+.logo--accent {
+    color: var(--accent-blue);
+}
+
+.menu__link {
+    color: var(--font-black);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-blue);
+        fill: var(--accent-blue);
+    }
+
+    &:hover::after,
+    &:focus::after {
+        background-color: var(--accent-blue);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        display: flex;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.contacts__link {
+    color: var(--font-grey);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    display: flex;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-blue);
+        fill: var(--accent-blue);
+    }
+}
+
+.current {
+    color: var(--accent-blue);
+    fill: var(--accent-blue);
+
+    &::after {
+        background-color: var(--accent-blue);
+    }
+}
+
+.contacts__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.header-container,
+.menu-toggle,
+.menu,
+.contacts,
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    margin-left: 93px;
+}
+
+.menu__item {
+    position: relative;
+}
+
+.contacts__item,
+.menu__item {
+    &:not(:first-child) {
+        margin-left: 50px;
+        white-space: nowrap;
+    }
+}
+
+.contacts {
+    margin-left: auto;
+}
+
+.menu__link,
+.contacts__link {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+}
