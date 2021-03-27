@@ -1,45 +1,36 @@
 .hero {
     color: var(--white);
-    font-weight: 900;
-    font-style: normal;
-    font-size: 26px;
-    line-height: 42px;
     text-align: center;
-    text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+
+    min-height: 400px;
+    max-width: 100%;
     background-size: cover;
     background-position: 50% 50%;
+    background-repeat: no-repeat;
 
-    @media screen and (max-width: 767px) {
-        min-height: 400px;
-        max-width: 100%;
-        background-size: ;
+    background: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-mobile_o.jpg);
 
-        background: linear-gradient(
-                to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)
-            ),
-            url(../images/hero-mobile_o.jpg);
-
-        @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-            background: linear-gradient(
-                    to right,
-                    rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)
-                ),
-                url(../images/hero-mobile@2x_o.jpg);
-        }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background: url(../images/hero-mobile@2x_o.jpg);
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         min-height: 400px;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
 
         background: linear-gradient(
                 to right,
@@ -63,6 +54,9 @@
     @media screen and (min-width: 1200px) {
         min-height: 600px;
         max-width: 1600px;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
 
         background: linear-gradient(
                 to right,
@@ -107,6 +101,10 @@
 }
 
 .hero__tittle {
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+
     @media screen and (max-width: 1199px) {
         font-size: 26px;
         line-height: 42px;
