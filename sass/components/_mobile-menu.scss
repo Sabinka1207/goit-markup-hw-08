@@ -1,0 +1,123 @@
+// MOBILE MODAL MENU
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 999;
+    transform: translateX(101%);
+    transition: transform 250ms ease-in-out;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0%);
+}
+
+.burger-container {
+    @media screen and (max-width: 767px) {
+        display: block;
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-toggle {
+    display: inline-flex;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    background-color: transparent;
+    color: var(--logo-black);
+    &:hover,
+    &:focus {
+        color: var(--accent-blue);
+    }
+}
+
+.burger-icon {
+    fill: currentColor;
+}
+
+.mobile-nav__item {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+.mobile-nav__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: var(--font-black);
+
+    &:focus,
+    &:hover {
+        color: var(--accent-blue);
+    }
+}
+
+.mobile-contacts {
+    margin-top: auto;
+}
+
+.mobile-contacts__tel {
+    display: inline-flex;
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+
+    color: var(--accent-blue);
+}
+
+.mobile-contacts__mail {
+    display: inline-flex;
+    margin-bottom: 64px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+
+    color: var(--font-grey);
+}
+
+.mobile-dotcoms__list {
+    display: flex;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.mobile-dotcoms__item {
+    &:last-child > a {
+        border-right: 0px;
+        margin-right: 0px;
+    }
+}
+
+.mobile-dotcoms__link {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+
+    color: var(--accent-blue);
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+}

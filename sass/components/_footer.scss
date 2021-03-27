@@ -10,6 +10,34 @@
     padding-top: 60px;
 }
 
+.main-contacts {
+    @media screen and (max-width: 767px) {
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+    }
+}
+
+address {
+    @media screen and (max-width: 767px) {
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+    }
+}
+
 .main-contacts__street {
     color: var(--white);
 }
@@ -25,6 +53,20 @@
     margin-bottom: 20px;
 }
 
+.add-us {
+    @media screen and (max-width: 767px) {
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+    }
+}
+
 .add-us__social-links {
     display: flex;
 }
@@ -36,9 +78,31 @@
 }
 
 .footer-container {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    @media screen and (max-width: 767px) {
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+}
+
+.subscribe {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+    }
 }
 
 .footer .logo {
@@ -85,7 +149,22 @@
 }
 
 .subscribe form {
-    display: flex;
+    @media screen and (max-width: 767px) {
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        & input {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .subscribe input {

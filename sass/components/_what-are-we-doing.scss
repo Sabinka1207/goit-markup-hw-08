@@ -4,6 +4,10 @@
 }
 
 .what-are-we-doing {
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
     text-align: center;
 }
 
@@ -12,9 +16,9 @@
     margin-right: 30px;
     position: relative;
     display: flex;
-    
+
     &:last-child {
-    margin-right: 0px;
+        margin-right: 0px;
     }
 }
 
@@ -33,7 +37,7 @@
     align-items: center;
 }
 
-.image-stick__title{
+.image-stick__title {
     text-transform: uppercase;
     font-weight: 700;
     color: var(--white);

@@ -13,8 +13,6 @@
     margin-right: auto;
 
     @media screen and (max-width: 767px) {
-        font-size: 26px;
-        line-height: 42px;
         min-height: 400px;
         max-width: 100%;
 
@@ -29,10 +27,7 @@
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        font-size: 26px;
-        line-height: 42px;
         min-height: 400px;
-        max-width: 768px;
 
         background: linear-gradient(
                 to right,
@@ -45,8 +40,6 @@
     }
 
     @media screen and (min-width: 1200px) {
-        font-size: 44px;
-        line-height: 60px;
         min-height: 600px;
         max-width: 1600px;
 
@@ -80,5 +73,17 @@
     &:focus {
         color: inherit;
         background-color: var(--accent-blue-active);
+    }
+}
+
+.hero__tittle {
+    @media screen and (max-width: 1199px) {
+        font-size: 26px;
+        line-height: 42px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 60px;
     }
 }
