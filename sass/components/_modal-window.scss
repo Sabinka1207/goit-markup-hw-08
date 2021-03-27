@@ -19,8 +19,6 @@
 }
 
 .modal-window {
-    width: 528px;
-    height: 581px;
     padding: 40px;
     background-color: var(--white);
     position: absolute;
@@ -29,7 +27,22 @@
     transform: translate(-50%, -50%);
 
     &::placeholder {
-    color: rgba(117, 117, 117, 0.5);
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    @media screen and (max-width: 767px) {
+        width: calc(100% - 30px);
+        height: 581px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 450px;
+        height: 609px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
     }
 }
 
@@ -42,8 +55,8 @@
 
 .close-button {
     &:hover,
-    &:focus{
-    color: var(--accent-blue);
+    &:focus {
+        color: var(--accent-blue);
     }
 }
 
@@ -76,7 +89,6 @@
     &:focus {
         border-color: var(--accent-blue);
     }
-
 }
 
 .comment__area {
@@ -105,10 +117,10 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        
+
     .modal-window input:focus + & {
-    border-color: var(--accent-blue);
-    fill: var(--accent-blue);
+        border-color: var(--accent-blue);
+        fill: var(--accent-blue);
     }
 }
 
@@ -121,9 +133,8 @@
     color: var(--font-grey);
 
     &:nth-child(1) {
-    margin-top: 12px;
+        margin-top: 12px;
     }
-
 }
 
 .modal-window__check-box {
@@ -136,6 +147,10 @@
     letter-spacing: 0.03em;
     color: #757575;
     cursor: pointer;
+
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+    }
 }
 
 .modal-window__check-box input {
@@ -157,15 +172,28 @@
 
 .modal-window__check-box span {
     margin-left: 8px;
-    font-size: 14px;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
 }
 
 .modal-window__check-box a {
-    font-size: 14px;
-    line-height: 24px;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: #2196f3;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
 }
 
 .modal-window__send {
@@ -191,11 +219,10 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover, 
-    &focus{
-    background-color: var(--accent-blue-active);
+    &:hover,
+    &focus {
+        background-color: var(--accent-blue-active);
     }
-
 }
 
 .check-box__icon {
@@ -205,8 +232,8 @@
     border-radius: 2px;
 
     .modal-window__check-box input:checked + & {
-    display: block;
-    border: none;
+        display: block;
+        border: none;
     }
 }
 
@@ -214,8 +241,7 @@
     display: none;
 
     .modal-window__check-box input:checked + & {
-    display: block;
-    border: none;
+        display: block;
+        border: none;
     }
 }
-

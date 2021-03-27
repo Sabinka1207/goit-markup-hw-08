@@ -11,10 +11,13 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    background-size: cover;
+    background-position: 50% 50%;
 
     @media screen and (max-width: 767px) {
         min-height: 400px;
         max-width: 100%;
+        background-size: ;
 
         background: linear-gradient(
                 to right,
@@ -22,8 +25,17 @@
                 rgba(47, 48, 58, 0.4)
             ),
             url(../images/hero-mobile_o.jpg);
-        background-size: cover;
-        background-position: 50% 50%;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background: linear-gradient(
+                    to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+                ),
+                url(../images/hero-mobile@2x_o.jpg);
+        }
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -35,8 +47,17 @@
                 rgba(47, 48, 58, 0.4)
             ),
             url(../images/hero-tablet_o.jpg);
-        background-size: cover;
-        background-position: 50% 50%;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background: linear-gradient(
+                    to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+                ),
+                url(../images/hero-tablet@2x_o.jpg);
+        }
     }
 
     @media screen and (min-width: 1200px) {
@@ -49,8 +70,17 @@
                 rgba(47, 48, 58, 0.4)
             ),
             url(../images/hero-desctop_o.jpg);
-        background-size: cover;
-        background-position: 50% 50%;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background: linear-gradient(
+                    to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+                ),
+                url(../images/hero-desctop@2x_o.jpg);
+        }
     }
 }
 
